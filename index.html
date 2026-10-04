@@ -1,608 +1,1528 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes">
-    <meta name="description" content="Oldevide Servicios Múltiples Generales S.A.C. - Consultora líder en Seguridad y Salud en el Trabajo (SST), Capacitaciones Ley 29783, Seguridad Minera y Consultoría SSOMA en Perú.">
-    <meta name="keywords" content="Seguridad y Salud en el Trabajo, Ley 29783, Capacitación SST, Consultoría SSOMA, Seguridad Minera, Perú, Arequipa">
-    <meta name="author" content="Oldevide SMG SAC">
-    
-    <!-- Verificaciones de tu blog original -->
-    <meta content='8UidPkTLBxgkmTyFJZ4XAoiyhFl_D1Ce4stOJyXSJY0' name='google-site-verification'/>
-    <meta content='04e317f22cdf1f2f14cde327dfb527e5' name='p:domain_verify'/>
-    
-    <title>Oldevide SMG SAC | Consultoría en Seguridad y Salud en el Trabajo</title>
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#ffbd2f">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Oldevide SMG">
-    
-    <!-- Iconos PWA -->
-    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
-    <link rel="apple-touch-icon" href="icon-192.png">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Righteous&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Datos Estructurados Schema.org -->
-    <script type='application/ld+json'>
-    {
-      "@context": "https://schema.org",
-      "@type": ["ProfessionalService", "LocalBusiness"],
-      "name": "Oldevide Servicios Multiples Generales S. A. C.",
-      "alternateName": "Oldevide SMG SAC",
-      "description": "Consultora líder en la implementación y gestión de sistemas de seguridad y salud en el trabajo (SST) en Perú.",
-      "slogan": "Su Aliado Estratégico en Seguridad y Salud Ocupacional.",
-      "email": "oldevide.comercial@outlook.com",
-      "telephone": "+5154711727",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Garcilazo de la Vega, Alto Selva Alegre",
-        "addressLocality": "Arequipa",
-        "addressRegion": "Arequipa",
-        "postalCode": "04001",
-        "addressCountry": "PE"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -16.3780,
-        "longitude": -71.5230
-      },
-      "sameAs": [
-        "https://www.facebook.com/OldevidePeru",
-        "https://www.instagram.com/oldevideperu/",
-        "https://www.youtube.com/@OldevidePeru",
-        "https://www.linkedin.com/company/oldevideperu/",
-        "https://x.com/OldevidePeru"
-      ]
-    }
-    </script>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        html {
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            background: #ffffff;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #2c3e50;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        /* ===== Skip Link Accesibilidad ===== */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #ffbd2f;
-            color: #000;
-            padding: 8px 16px;
-            z-index: 9999;
-            transition: top 0.3s;
-        }
-        
-        .skip-link:focus {
-            top: 0;
-        }
-        
-        /* ===== Header / Menú ===== */
-        .scroll-header {
-            background: rgba(30, 30, 30, 0.95);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 15px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-        
-        .scroll-head-wrap {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .scrollin-logo h1 {
-            color: #ffbd2f;
-            font-size: 24px;
-            font-weight: 700;
-            font-family: 'Righteous', cursive;
-        }
-        
-        .scrolling-menu ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-        
-        .scrolling-menu a {
-            color: #fff;
-            font-weight: 500;
-            text-transform: uppercase;
-            font-size: 13px;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-        }
-        
-        .scrolling-menu a:hover,
-        .scrolling-menu a.current {
-            color: #ffbd2f;
-        }
-        
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: #fff;
-            font-size: 28px;
-            cursor: pointer;
-        }
-        
-        /* ===== Hero - IMAGEN DE FONDO CORREGIDA ===== */
-        #header-wrapper {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOsBFpTOt0ZAuBRQiYUNUYdNMunFKUneH3YR4rtK8vGFlAdqV751w0c4q7OpiNkA8mJoSauFShyphenhyphentSZEPRQW0X3B2AptGlZ702JtPxiCDe4eJP419ILJRgTkxx28QxpkEH8R3oVMaV7EZZJFIGbKsyCONmXeE8Goxraaq-EP_pcwUiI6RCnlf3wY2-gsP_m/s1600/Oldevide-Servicios-Multiples-Generales-SAC.webp');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-            padding: 80px 20px 40px;
-        }
-        
-        .header-text h2 {
-            font-size: 52px;
-            font-weight: 900;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-            font-family: 'Righteous', cursive;
-        }
-        
-        .header-logo-desc {
-            font-size: 22px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-        }
-        
-        .header-logo-desc span {
-            color: #ffbd2f;
-            font-weight: 700;
-            font-size: 31px;
-        }
-        
-        .btn-hero {
-            display: inline-block;
-            background: #ffbd2f;
-            color: #000;
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: transform 0.3s, background 0.3s;
-        }
-        
-        .btn-hero:hover {
-            background: #fff;
-            transform: translateY(-3px);
-        }
-        
-        /* ===== Secciones ===== */
-        .section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 80px 20px;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 34px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #2c3e50;
-        }
-        
-        .section-subtitle {
-            text-align: center;
-            color: #606060;
-            max-width: 700px;
-            margin: 0 auto 50px;
-            font-size: 17px;
-        }
-        
-        /* ===== Grid de Servicios ===== */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .service-card {
-            background: #f8f8f8;
-            padding: 40px 30px;
-            border-radius: 8px;
-            text-align: center;
-            border-top: 4px solid #ffbd2f;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        }
-        
-        .service-icon {
-            font-size: 48px;
-            color: #ffbd2f;
-            margin-bottom: 20px;
-        }
-        
-        .service-card h3 {
-            font-size: 20px;
-            margin-bottom: 15px;
-            color: #2c3e50;
-        }
-        
-        .service-card p {
-            color: #606060;
-        }
-        
-        .bg-gray {
-            background: #f1f1f1;
-        }
-        
-        /* ===== Contacto ===== */
-        .contact-info {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .contact-list {
-            list-style: none;
-            margin-top: 30px;
-        }
-        
-        .contact-list li {
-            font-size: 18px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .contact-list i {
-            color: #ffbd2f;
-            font-size: 22px;
-            width: 30px;
-        }
-        
-        .contact-list a {
-            color: #2c3e50;
-            transition: color 0.3s;
-        }
-        
-        .contact-list a:hover {
-            color: #ffbd2f;
-        }
-        
-        /* ===== Footer ===== */
-        .bot-bar-menu {
-            background: #222;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .social-links a {
-            color: #fff;
-            font-size: 24px;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: #ffbd2f;
-        }
-        
-        .copyright {
-            margin-top: 15px;
-            color: #aaa;
-            font-size: 14px;
-        }
-        
-        /* ===== Botón flotante WhatsApp ===== */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background: #25D366;
-            color: #fff;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 32px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            z-index: 999;
-            transition: transform 0.3s;
-        }
-        
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-        
-        /* ===== Responsive ===== */
-        @media (max-width: 768px) {
-            .scrolling-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #1e1e1e;
-                padding: 20px;
-            }
-            
-            .scrolling-menu.active {
-                display: block;
-            }
-            
-            .scrolling-menu ul {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .menu-toggle {
-                display: block;
-            }
-            
-            .header-text h2 {
-                font-size: 32px;
-            }
-            
-            .header-logo-desc {
-                font-size: 16px;
-            }
-            
-            .header-logo-desc span {
-                font-size: 22px;
-            }
-            
-            .section-title {
-                font-size: 26px;
-            }
-            
-            .contact-list li {
-                font-size: 15px;
-                flex-wrap: wrap;
-            }
-            
-            #header-wrapper {
-                background-attachment: scroll;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes">
+<title>Oldevide SMG SAC | Consultora en Seguridad y Salud en el Trabajo</title>
+<meta name="description" content="Consultora líder en la implementación y gestión de sistemas de seguridad y salud en el trabajo (SST) en Perú. Asesoría integral, supervisión, certificación de competencias y capacitaciones presenciales y virtuales a nivel nacional.">
+<meta name="keywords" content="Capacitaciones virtuales de SST, Ley 29783, DS-024-2016-EM, Seguridad Industrial, Seguridad Minera, Seguridad y Salud en el Trabajo, Trabajos de Alto Riesgo, Gestión de Seguridad, Curso de Especializacion SSOMA 280 horas, LOTOTO, PETS, Altura, Confinado, Caliente, Excavaciones, Izajes">
+<meta name="author" content="Victor Delgado Quilla">
+<meta name="geo.placename" content="Arequipa">
+<meta content='8UidPkTLBxgkmTyFJZ4XAoiyhFl_D1Ce4stOJyXSJY0' name='google-site-verification'/>
+<meta content='04e317f22cdf1f2f14cde327dfb527e5' name='p:domain_verify'/>
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffbd2f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Oldevide SMG">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Righteous&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["ProfessionalService", "LocalBusiness"],
+  "name": "Oldevide Servicios Multiples Generales S. A. C.",
+  "alternateName": "Oldevide SMG SAC",
+  "url": "https://oldevide-smg-sac.blogspot.com/",
+  "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasKXc23JJ4XwcUXn1GKFwKQgO7-Q7zTg5_c7GSXt2x0AZyUfyxDuqcEWfKOKL3NhvkIZqwkqz1qpVGkEvIfdlNhE4F55k5RBLarNpLDO7wHVRuwZ5IPLs2ii7Bpfv_lUmk_ChRW8oHAT1wTZjHsMajUOBjlYABCPypZhu3xiZ5IKTNuuErHNdAw2xIDTu/s678/Oldevide-Servicios-Multiples-Generales-SAC.webp",
+  "description": "Consultora líder en la implementación y gestión de sistemas de seguridad y salud en el trabajo (SST) en Perú.",
+  "slogan": "Su Aliado Estratégico en Seguridad y Salud Ocupacional.",
+  "email": "oldevide.comercial@outlook.com",
+  "telephone": "+5154711727",
+  "foundingDate": "2015-03-10",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Garcilazo de la Vega, Alto Selva Alegre",
+    "addressLocality": "Arequipa",
+    "addressRegion": "Arequipa",
+    "postalCode": "04001",
+    "addressCountry": "PE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -16.3780,
+    "longitude": -71.5230
+  },
+  "sameAs": [
+    "https://www.facebook.com/OldevidePeru",
+    "https://www.instagram.com/oldevideperu/",
+    "https://www.youtube.com/@OldevidePeru",
+    "https://www.linkedin.com/company/oldevideperu/",
+    "https://x.com/OldevidePeru"
+  ]
+}
+</script>
+
+<style>
+/* ===== RESET ===== */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, small, strong, sub, sup, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, figure {
+  margin: 0;
+  padding: 0;
+}
+html { overflow-x: hidden; }
+a { text-decoration: none; color: #2c3e50; }
+a:hover { text-decoration: none; color: #ffbd2f; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { padding: 0; margin: 0; text-align: left; }
+::selection { background: #ffbd2f; color: #000; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-weight: 900;
+  color: #151515;
+}
+img { max-width: 100%; vertical-align: middle; border: 0; }
+
+body {
+  color: #2c3e50;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  background: #ffffff;
+}
+
+.row { width: 1170px; max-width: 100%; margin: 0 auto; }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #ffbd2f;
+  color: #000;
+  padding: 8px 16px;
+  z-index: 9999;
+  transition: top 0.3s;
+}
+.skip-link:focus { top: 0; }
+
+/* ===== HEADER ===== */
+.scroll-header {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  transition: all .5s;
+  background-color: rgba(30, 30, 30, 0.85);
+}
+.scroll-head-wrap { margin: 0 auto; padding: 0 20px; }
+.scrollin-logo { float: left; margin: 0; padding: 0; display: inline-block; }
+.scrollin-logo .logo-title {
+  font-size: 32px;
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+  padding: 10px 17px;
+  display: block;
+  color: #fff;
+}
+.scrolling-menu { float: right; display: inline-block; width: auto; }
+.scrolling-menu ul { list-style: none; margin: 0; padding: 0; z-index: 999; }
+.scrolling-menu ul li {
+  display: inline-block;
+  float: left;
+  line-height: 1;
+  list-style: none outside none;
+  padding: 16px 17px;
+  text-align: left;
+}
+.scrolling-menu ul li a {
+  background: transparent;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding: 0 0 8px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 1.3px;
+}
+.scrolling-menu ul li a:hover { color: #ffbd2f; }
+.scrolling-menu ul li.current a { color: #ffbd2f; }
+.scrolling-menu ul li.current a:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  height: 1px;
+  content: '';
+  transition: all ease .3s;
+  background: #ffbd2f;
+}
+
+/* ===== HERO ===== */
+#header-wrapper {
+  text-align: center;
+  padding: 0;
+  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOsBFpTOt0ZAuBRQiYUNUYdNMunFKUneH3YR4rtK8vGFlAdqV751w0c4q7OpiNkA8mJoSauFShyphenhyphentSZEPRQW0X3B2AptGlZ702JtPxiCDe4eJP419ILJRgTkxx28QxpkEH8R3oVMaV7EZZJFIGbKsyCONmXeE8Goxraaq-EP_pcwUiI6RCnlf3wY2-gsP_m/s1600/Oldevide-Servicios-Multiples-Generales-SAC.webp) no-repeat center bottom;
+  background-attachment: scroll;
+  background-size: cover;
+  margin-bottom: 10px;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100svh;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+#header-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  background: #343434;
+}
+.fenix-head { display: table; width: 100%; height: 100%; position: relative; z-index: 1; }
+.fenix-sub-head { margin: 0 auto; display: table-cell; vertical-align: middle; }
+.header-text p {
+  color: #fff;
+  margin: 0;
+  font-size: 50px;
+  line-height: 1.4em;
+  text-transform: Uppercase;
+  letter-spacing: 1px;
+  font-family: 'Righteous', cursive;
+}
+.header-logo-desc span { font-size: 31px; color: #ffbd2f; }
+.header-logo-desc p {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 31px;
+  line-height: 37px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin: 0 0 0 20px;
+  padding-right: 20px;
+}
+.header-logo-desc { margin: 10px 0 20px; text-transform: uppercase; }
+.typed-cursor {
+  font-weight: 300;
+  font-size: 31px;
+  color: #ffbd2f;
+  opacity: 1;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+/* ===== SOCIAL HEAD ===== */
+.top-bar-social .LinkList ul { text-align: center; margin: 0; }
+.top-bar-social #social a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 100%;
+  transition: background 0.3s linear;
+  margin: 0 3px;
+}
+.top-bar-social #social a:before {
+  display: inline-block;
+  font: normal normal normal 22px/1 FontAwesome;
+  font-size: inherit;
+}
+.top-bar-social .facebook:before { content: "\f09a" }
+.top-bar-social .twitter:before { content: "\f099" }
+.top-bar-social .youtube:before { content: "\f167" }
+.top-bar-social .linkedin:before { content: "\f0e1" }
+.top-bar-social .instagram:before { content: "\f16d" }
+.top-bar-social .facebook { background: #3b5998 }
+.top-bar-social .twitter { background: #00aced }
+.top-bar-social .youtube { background: #cd201f }
+.top-bar-social .linkedin { background: #0077b5 }
+.top-bar-social .instagram { background: #c13584 }
+.top-bar-social ul#social a:hover { color: #ffbd2f; opacity: 1; }
+
+/* ===== SECTION 1: SERVICIOS ===== */
+.sora-special-box {
+  background: #fff;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.special-wrap { margin: 0 auto; }
+.special-title { text-align: center; margin-bottom: 35px; }
+.special-title h4 { font-size: 30px; line-height: 45px; color: #2c3e50; }
+.special-tiles {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.special-icons {
+  font-size: 30px;
+  float: left;
+  color: #2c3e50;
+  margin-right: 10px;
+  width: 50px;
+  height: 60px;
+  line-height: 60px;
+}
+.special-heading {
+  font-size: 17px;
+  line-height: 21px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.special-text { color: #606060; }
+.skills, .skill-details {
+  padding: 15px;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding-right: 40px;
+  padding-left: 0;
+}
+.skill-details { float: right; padding-left: 40px; padding-right: 0; }
+.skills dt { margin-bottom: 8px; font-weight: bold; }
+.skills dt:after {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 0.5rem;
+  content: "";
+  display: block;
+}
+.skills dd {
+  width: 0;
+  height: 0.5rem;
+  position: relative;
+  top: -0.5rem;
+}
+.skills dd.html { background: #F44336; }
+.skills dd.css { background: #2196F3; }
+.skills dd.jquery { background: #FFCA28; }
+.skills dd.scss { background: #F06292; }
+.skills dd.javascript { background: #FFA000; }
+.skills dd.php { background: #303F9F; }
+.skills dd.xml { background: #27ae60; }
+
+/* ===== SECTION 2: CAPACITACIONES ===== */
+.sora-works-box {
+  background: #f1f1f1;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.works-wrap { margin: 0 auto; }
+.works-title { text-align: center; margin-bottom: 35px; }
+.works-title h4 { font-size: 30px; line-height: 45px; color: #2c3e50; }
+.works-title span { color: #aaa; }
+.works-tiles {
+  width: 25%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.works-icons {
+  font-size: 45px;
+  display: block;
+  color: #ffbd2f;
+  margin-bottom: 20px;
+}
+.works-icons li {
+  width: 60px;
+  height: 60px;
+  background-color: #ffbd2f;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  list-style: none;
+  box-shadow: 0 15px 34px rgba(0, 0, 0, 0.18);
+  transition: all 0.4s ease-in-out;
+}
+.works-icons li .text { line-height: 60px; font-size: 25px; color: #fff; display: block; }
+.works-heading {
+  font-size: 18px;
+  line-height: 21px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.works-text { margin: 0 0 20px; color: #707070; }
+
+/* ===== CONTADORES ===== */
+.counter-box {
+  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6TO1bKV9I39JcMHmLLCzAOBN-JkqNVd5-4aHKAgXL76O_adJy35vvu8UdWt2pf9XRruHbhsNyvqi1rFlkjAP_RrgKtnpYnu4v6t3SfDSURbmq8t-TCUON_gxvhIBI9505C7jjAfshmHBRhbZKocvEDiO_9nvrC4x8zOaCGrgXWZnw43M/s1600/Estrategias-para-Mitigar-los-Riesgos-Psicosociales.webp) no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: 50% 0;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+}
+.counter-box:before {
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+.counter-box-wrap { margin: 0 auto; position: relative; z-index: 1; }
+.counter-box-item {
+  width: 25%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.counter-box-item i { font-size: 24px; }
+.counter-sora {
+  color: #fff;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  margin: 10px 0;
+  font-family: 'Righteous', cursive;
+}
+.counter-sora-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: #fff;
+}
+
+/* ===== PORTFOLIO / BLOG ===== */
+.Portfolio-title { text-align: center; margin: 25px 0; }
+.Portfolio-title h4 { font-size: 35px; line-height: 45px; color: #2c3e50; }
+.Portfolio-title span { color: #606060; }
+.post-grid { overflow: hidden; }
+.post-grid-item {
+  width: 25%;
+  float: left;
+  padding: 0 15px 15px 0;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.block-image { float: left; width: 100%; height: auto; position: relative; }
+.block-image .thumb {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.block-image .thumb:before {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  opacity: 0;
+  z-index: 3;
+}
+.block-image img {
+  width: 100%;
+  height: 260px;
+  display: block;
+  object-fit: cover;
+  transition: all .3s ease-out !important;
+}
+.block-image:hover .retitle { opacity: 1; }
+.block-image:hover .thumb:before { opacity: 1; }
+.block-image .retitle {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  display: table;
+  width: 100%;
+  height: 260px;
+  box-sizing: border-box;
+  opacity: 0;
+  z-index: 9;
+  transition: all .3s ease-out !important;
+}
+.block-image .post-retitle { display: table-cell; vertical-align: middle; }
+.block-image .post-retitle h2 {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.post h2 a { color: #fff; font-size: 22px; line-height: 1.3em; }
+
+/* ===== TESTIMONIOS / GALERIA ===== */
+.main-gallery {
+  background: #000 no-repeat scroll 50% 50% / cover;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-cell { width: 100%; float: left; }
+.testimonial {
+  text-align: center;
+  max-width: 850px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+.testimonial svg { width: 120px !important; height: 120px !important; max-width: 120px !important; max-height: 120px !important; }
+.testimonial-quote {
+  display: block;
+  font-size: 24px;
+  padding: 10px 0;
+  line-height: 1.4;
+  color: #fff;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+.testimonial-author { display: block; font-weight: 400; color: #ffbd2f; }
+.gallery-controls { text-align: center; padding-bottom: 30px; }
+.gallery-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #efefef;
+  border-radius: 50%;
+  opacity: .8;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+}
+.gallery-dot.is-selected { opacity: 1; background: #ffbd2f; }
+.gallery-prev, .gallery-next {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,.75);
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 20px;
+}
+.gallery-prev { left: 10px; }
+.gallery-next { right: 10px; }
+
+/* ===== SECTION 6: SERVICIOS MULTIPLES ===== */
+.sora-about-box {
+  background: #f8f8f8;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.about-wrap { margin: 0 auto; }
+.about-title { text-align: center; margin-bottom: 35px; }
+.about-title h4 { font-size: 30px; line-height: 45px; color: #2c3e50; }
+.about-title span { color: #aaa; }
+.about-tiles {
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.team-img img {
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+}
+.team-member, .team-img { position: relative; overflow: hidden; }
+.team-title { margin: 30px 0 7px; }
+.overlay {
+  background-color: rgba(20, 20, 20, .7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+.team-details {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 5%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  box-sizing: border-box;
+  transition: all .2s ease-in-out;
+}
+.team-details p { color: #fff; }
+.team-img:hover .team-details { opacity: 1; margin-top: -80px; }
+.team-img:hover .overlay { opacity: 1; }
+.socials a { display: inline-block; width: 37px; height: 37px; background-color: transparent; }
+.socials i {
+  line-height: 37px;
+  color: #616161;
+  font-size: 14px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+.team-details .socials i { color: #fff; }
+.socials a:hover i { color: #fff; background-color: #355c7d; }
+
+/* ===== CONTACTO ===== */
+.contact-title { text-align: center; margin: 25px 0; }
+.contact-title h4 { font-size: 30px; line-height: 45px; color: #2c3e50; }
+.contact-title span { color: #606060; }
+#sora_blogger_cntct_form {
+  padding: 50px 0;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#sora_blogger_cntct_form .wrap-me {
+  margin: 0 auto;
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #000;
+  padding: 40px 40px 5px;
+}
+#sora_blogger_cntct_form span.name-bg, #sora_blogger_cntct_form span.email-bg, #sora_blogger_cntct_form span.message-bg {
+  display: inline-block;
+  line-height: 21px;
+  width: 100%;
+  color: rgba(255,255,255,.6);
+  padding: 3px 0;
+  margin: 0 0 4px;
+  box-sizing: border-box;
+  height: 30px;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+.contact-form-input, .contact-form-email-message {
+  padding: 5px;
+  margin-top: 4px !important;
+  box-shadow: none !important;
+  width: 100%;
+  max-width: 100%;
+  background: transparent !important;
+  color: #fff;
+  border-color: rgba(255,255,255,.15) !important;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  line-height: 1em;
+  min-height: 31px;
+  margin-bottom: 15px;
+  border-radius: 0;
+  font-family: inherit;
+}
+.contact-form-email-message { min-height: 80px; }
+.contact-form-input:focus, .contact-form-email-message:focus {
+  outline: none;
+  border-color: #ffbd2f !important;
+}
+.contact-form-button-submit {
+  background: transparent;
+  display: table;
+  font-size: 17px;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  width: 100%;
+  height: 42px;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff !important;
+  text-align: center;
+  padding: 0 25px;
+  transition: all 300ms ease-in-out;
+}
+.contact-form-button-submit:hover {
+  background: #ffbd2f !important;
+  color: #000 !important;
+}
+.form-success-msg, .form-error-msg {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  min-height: 25px;
+}
+.map-me {
+  margin: 0 auto;
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.map-me .con-title {
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 48px;
+  color: #2c3e50;
+  margin: 0;
+}
+.map-me .con-text {
+  font-weight: 400;
+  line-height: 24px;
+  color: #2c3e50;
+  margin: 0 0 10px;
+}
+.map-me .con-list { list-style-type: none; padding: 0; }
+.map-me .con-list li {
+  list-style-type: none;
+  color: #333;
+  line-height: 45px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.map-me .con-list li i {
+  font-size: 1em;
+  margin-right: 20px;
+  padding: 15px;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+}
+
+/* ===== FOOTER ===== */
+.bot-bar-menu {
+  background-color: #222;
+  padding: 20px 0;
+  overflow: hidden;
+}
+.bot-menu-wrap {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+.bot-menu ul { overflow: hidden; list-style: none; padding: 0; margin: 0; text-align: center; }
+.bot-menu ul li { display: inline-block; list-style: none; padding: 0; }
+.bot-menu ul li a {
+  padding: 10px 16px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
+  color: #eeeeee;
+  text-transform: uppercase;
+}
+.bot-menu ul li a:hover { color: #ffbd2f; }
+.jugas_footer_copyright {
+  display: inline-block;
+  color: #fff;
+  height: 52px;
+  line-height: 52px;
+}
+.jugas_footer_copyright a { color: #ffbd2f; }
+.bottom-bar-social #social { list-style: none; text-align: center; padding: 0; }
+.bottom-bar-social li { display: inline; padding: 0; margin-right: 5px; }
+.bottom-bar-social #social a {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 5px;
+}
+.bottom-bar-social #social a:before {
+  display: inline-block;
+  font: normal normal normal 22px/1 FontAwesome;
+  font-size: inherit;
+}
+.bottom-bar-social .facebook:before { content: "\f09a" }
+.bottom-bar-social .twitter:before { content: "\f099" }
+.bottom-bar-social .youtube:before { content: "\f167" }
+.bottom-bar-social .linkedin:before { content: "\f0e1" }
+.bottom-bar-social .instagram:before { content: "\f16d" }
+.bottom-bar-social ul#social a:hover { color: #ffbd2f; opacity: 1; }
+
+/* ===== ANIMACIONES ===== */
+.animated { animation-duration: 1s; animation-fill-mode: both; }
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translate3d(0, 100%, 0); }
+  100% { opacity: 1; transform: none; }
+}
+.fadeInUp { animation-name: fadeInUp; }
+@keyframes fadeInLeft {
+  0% { opacity: 0; transform: translate3d(-100%, 0, 0); }
+  100% { opacity: 1; transform: none; }
+}
+.fadeInLeft { animation-name: fadeInLeft; }
+@keyframes fadeInRight {
+  0% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  100% { opacity: 1; transform: none; }
+}
+.fadeInRight { animation-name: fadeInRight; }
+@keyframes fadeInUpBig {
+  0% { opacity: 0; transform: translate3d(0, 2000px, 0); }
+  100% { opacity: 1; transform: none; }
+}
+.fadeInUpBig { animation-name: fadeInUpBig; }
+@keyframes slideInUp {
+  0% { transform: translate3d(0, 100%, 0); visibility: visible; }
+  100% { transform: translateZ(0); }
+}
+.slideInUp { animation-name: slideInUp; }
+@keyframes bounceInUp {
+  0%, 60%, 75%, 90%, 100% { animation-timing-function: cubic-bezier(.215, .61, .355, 1); }
+  0% { opacity: 0; transform: translate3d(0, 3000px, 0); }
+  60% { opacity: 1; transform: translate3d(0, -20px, 0); }
+  75% { transform: translate3d(0, 10px, 0); }
+  90% { transform: translate3d(0, -5px, 0); }
+  100% { transform: translateZ(0); }
+}
+.bounceInUp { animation-name: bounceInUp; }
+
+/* ===== RESPONSIVE ===== */
+@media only screen and (max-width: 1200px) {
+  .row { width: 100%; padding-left: 10px !important; padding-right: 10px !important; box-sizing: border-box; }
+  .post-grid-item { width: 33.33%; }
+}
+@media only screen and (max-width: 1100px) {
+  #sora_blogger_cntct_form .wrap-me { max-width: 500px; float: none; clear: both; margin: 0 auto 20px; width: 100%; }
+  .map-me { max-width: 500px; float: none; clear: both; margin: 0 auto; width: 100%; }
+}
+@media only screen and (max-width: 980px) {
+  .scrolling-menu { display: none; }
+  .menu-toggle { display: block !important; }
+  .skills, .skill-details { width: 100%; float: none; padding: 20px; clear: both; }
+  .works-tiles { width: 50%; }
+  .about-tiles { width: 100%; }
+  .counter-box-item { width: 50%; }
+  .post-grid-item { width: 50%; }
+}
+.menu-toggle {
+  display: none;
+  float: right;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+}
+.mobile-menu {
+  display: none;
+  clear: both;
+  background: #1e1e1e;
+  padding: 20px;
+}
+.mobile-menu.active { display: block; }
+.mobile-menu ul { list-style: none; }
+.mobile-menu ul li { padding: 10px 0; }
+.mobile-menu ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 768px) {
+  .header-text p { font-size: 30px; }
+  .header-logo-desc span, .header-logo-desc p { font-size: 18px; }
+  .scrollin-logo .logo-title { font-size: 22px; padding: 10px 5px; }
+  .post-grid-item { width: 100%; padding-right: 0; }
+  .counter-box-item, .works-tiles { width: 50%; }
+}
+@media only screen and (max-width: 480px) {
+  .special-tiles, .works-tiles, .about-tiles, .counter-box-item { width: 100%; }
+  .header-text p { font-size: 20px; }
+  .header-logo-desc span, .header-logo-desc p { font-size: 16px; }
+}
+</style>
 </head>
 <body>
-    <a class="skip-link" href="#section-2">Saltar al contenido principal</a>
-    
-    <!-- ===== HEADER / MENÚ ===== -->
-    <header class="scroll-header">
-        <div class="scroll-head-wrap">
-            <div class="scrollin-logo">
-                <h1>OLDEVIDE SMG</h1>
-            </div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="scrolling-menu" id="navMenu" aria-label="Menú principal" role="navigation">
-                <ul>
-                    <li><a class="current" href="#header-wrapper">Inicio</a></li>
-                    <li><a href="#section-2">Servicios HSE</a></li>
-                    <li><a href="#section-3">Capacitación</a></li>
-                    <li><a href="#section-7">Contacto</a></li>
-                </ul>
-            </nav>
+<a class="skip-link" href="#section-2">Saltar al contenido principal</a>
+
+<!-- HEADER -->
+<div class="scroll-header" id="head-trigger" role="banner">
+  <div class="scroll-head-wrap row">
+    <div class="scrollin-logo">
+      <h1 class="logo-title">OLDEVIDE SMG</h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <i class="fa fa-bars"></i>
+    </button>
+    <nav class="scrolling-menu" aria-label="Menú principal" role="navigation">
+      <ul id="nav">
+        <li class="current"><a href="#header-wrapper">Inicio</a></li>
+        <li><a href="#section-2">Servicios HSE</a></li>
+        <li><a href="#section-3">Capacitación</a></li>
+        <li><a href="#main-wrapper">Articulos</a></li>
+        <li><a href="#section-5">Clientes</a></li>
+        <li><a href="#section-6">Servicios</a></li>
+        <li><a href="#section-7">Contacto</a></li>
+      </ul>
+    </nav>
+    <div style="clear: both;"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#header-wrapper">Inicio</a></li>
+        <li><a href="#section-2">Servicios HSE</a></li>
+        <li><a href="#section-3">Capacitación</a></li>
+        <li><a href="#main-wrapper">Articulos</a></li>
+        <li><a href="#section-5">Clientes</a></li>
+        <li><a href="#section-6">Servicios</a></li>
+        <li><a href="#section-7">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div id="header-wrapper">
+  <div class="fenix-head">
+    <div class="fenix-sub-head row">
+      <div class="header-text">
+        <p>Oldevide SMG S. A. C.</p>
+      </div>
+      <div style="clear: both;"></div>
+      <div class="header-logo-desc">
+        <div class="type">
+          <span>Soluciones en:</span><p id="typedText"></p><span class="typed-cursor">|</span>
         </div>
-    </header>
-    
-    <!-- ===== HERO ===== -->
-    <section id="header-wrapper">
-        <div class="header-text">
-            <h2>Oldevide SMG S.A.C.</h2>
-            <div class="header-logo-desc">
-                <span>Soluciones en:</span><br>
-                Asesoría | Consultoría | Capacitación
+      </div>
+      <div style="clear: both;"></div>
+      <div class="social-head">
+        <div class="top-bar-social blue section" id="header social widget">
+          <div class="widget LinkList" id="LinkList230">
+            <div class="widget-content">
+              <ul id="social" style="list-style:none;">
+                <li><a aria-label="Facebook de Oldevide Peru" class="facebook" href="https://www.facebook.com/OldevidePeru" rel="noopener noreferrer" target="_blank" title="facebook"></a></li>
+                <li><a aria-label="LinkedIn de Oldevide Peru" class="linkedin" href="https://www.linkedin.com/company/oldevideperu/" rel="noopener noreferrer" target="_blank" title="linkedin"></a></li>
+                <li><a aria-label="YouTube de Oldevide Peru" class="youtube" href="https://www.youtube.com/@OldevidePeru" rel="noopener noreferrer" target="_blank" title="youtube"></a></li>
+                <li><a aria-label="Instagram de Oldevide Peru" class="instagram" href="https://www.instagram.com/oldevideperu/" rel="noopener noreferrer" target="_blank" title="instagram"></a></li>
+                <li><a aria-label="X Twitter de Oldevide Peru" class="twitter" href="https://x.com/OldevidePeru" rel="noopener noreferrer" target="_blank" title="X"></a></li>
+              </ul>
             </div>
-            <a href="#section-7" class="btn-hero">Contáctanos</a>
+          </div>
         </div>
-    </section>
-    
-    <!-- ===== SERVICIOS HSE ===== -->
-    <section id="section-2" class="section">
-        <h2 class="section-title">Servicios de Seguridad y Salud en el Trabajo</h2>
-        <p class="section-subtitle">Brindamos soluciones integrales en SST para empresas de todos los sectores, cumpliendo con la normativa peruana vigente.</p>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
-                <h3>Capacitaciones</h3>
-                <p>Cursos virtuales y presenciales de seguridad y salud en el trabajo según la Ley 29783.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
-                <h3>Gestión y Supervisión SSOMA</h3>
-                <p>Gestión y supervisión de seguridad de trabajos de alto riesgo en minería e industria.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
-                <h3>Asesoría y Consultoría</h3>
-                <p>Implementación y gestión de sistemas integrados de seguridad y salud ocupacional.</p>
-            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="clear: both;"></div>
+
+<!-- SECCION 2: SERVICIOS HSE -->
+<div class="sora-special-box" id="section-2">
+  <div class="special-wrap row">
+    <div class="special-title">
+      <h4><b>Servicios Seguridad y Salud en el Trabajo</b></h4>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="skills">
+      <dl>
+        <dt>Implementacion de sistemas integrados de gestion de seguridad ocupacional</dt>
+        <dd class="skill-percent html" data-percent="99"></dd>
+        <dt>Implementacion de la Ley 29783 modificatorias y reglamento</dt>
+        <dd class="skill-percent css" data-percent="99"></dd>
+        <dt>Gestion y supervision del DS-024-2016-EM Reglamento de seguridad en mineria</dt>
+        <dd class="skill-percent jquery" data-percent="99"></dd>
+        <dt>Cursos y capacitaciones de seguridad de la Ley 29783</dt>
+        <dd class="skill-percent scss" data-percent="99"></dd>
+        <dt>Cursos y capacitaciones obligatorias y condicionantes del Anexo 06 DS-023-2017-EM</dt>
+        <dd class="skill-percent javascript" data-percent="98"></dd>
+        <dt>Gestion y supervision de trabajos de alto riesgo</dt>
+        <dd class="skill-percent php" data-percent="99"></dd>
+        <dt>Asesoria y consultoria de seguridad y salud en el trabajo</dt>
+        <dd class="skill-percent xml" data-percent="100"></dd>
+      </dl>
+    </div>
+    <div class="skill-details">
+      <div class="special-tiles">
+        <span class="special-icons"><i aria-hidden="true" class="fa fa-paint-brush"></i></span>
+        <span class="special-content">
+          <h6 class="special-heading">Cursos y Capacitaciones</h6>
+          <p class="special-text">Brindamos cursos virtuales y presenciales de seguridad y salud en el trabajo. <a href="https://oldevide-smg-sac.blogspot.com/p/capacitaciones-de-seguridad.html" target="_blank"><b>Leer mas</b></a></p>
+        </span>
+      </div>
+      <div class="special-tiles">
+        <span class="special-icons"><i aria-hidden="true" class="fa fa-child"></i></span>
+        <span class="special-content">
+          <h6 class="special-heading">Gestion y Supervision</h6>
+          <p class="special-text">Realizamos la gestion y supervision de seguridad de trabajos de alto riesgo. <a href="https://oldevide-smg-sac.blogspot.com/p/gestion-y-supervision-de-seguridad.html" target="_blank"><b>Leer mas</b></a></p>
+        </span>
+      </div>
+      <div class="special-tiles">
+        <span class="special-icons"><i aria-hidden="true" class="fa fa-cog"></i></span>
+        <span class="special-content">
+          <h6 class="special-heading">Asesoria y Consultoria</h6>
+          <p class="special-text">Brindamos asesoria y consultoria para la implementacion y gestion de sistemas integrados de gestion de seguridad. <a href="https://oldevide-smg-sac.blogspot.com/p/asesoria-y-consultoria-de-seguridad.html" target="_blank"><b>Leer mas</b></a></p>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="clear: both;"></div>
+
+<!-- SECCION 3: CAPACITACIONES -->
+<div class="sora-works-box" id="section-3">
+  <div class="works-wrap row">
+    <div class="works-title">
+      <h4><b>Cursos y Capacitaciones de Seguridad</b></h4>
+      <span>Brindamos cursos virtuales y presenciales dirigido a Empresas mineras, industriales, construcción, transportes, Estado</span>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="works-tiles">
+      <span class="works-icons">
+        <li data-percent="25"><span class="text"><i aria-hidden="true" class="fa fa-legal"></i></span></li>
+      </span>
+      <h6 class="works-heading">04 Capacitaciones Obligatorias</h6>
+      <p class="works-text">Brindamos las 04 capacitaciones obligatorias de seguridad de acuerdo a la Ley 29783. <a href="https://oldevide-smg-sac.blogspot.com/p/capacitaciones-de-la-ley-29783.html" target="_blank"><b>Leer mas</b></a></p>
+    </div>
+    <div class="works-tiles">
+      <span class="works-icons">
+        <li data-percent="50"><span class="text"><i aria-hidden="true" class="fa fa-gears"></i></span></li>
+      </span>
+      <h6 class="works-heading">Seguridad Minera Anexo 06</h6>
+      <p class="works-text">Planificamos y brindamos las capacitaciones obligatorias del reglamento de seguridad minera. <a href="https://oldevide-smg-sac.blogspot.com/p/capacitacion-de-seguridad-minera.html" target="_blank"><b>Leer mas</b></a></p>
+    </div>
+    <div class="works-tiles">
+      <span class="works-icons">
+        <li data-percent="75"><span class="text"><i aria-hidden="true" class="fa fa-female"></i></span></li>
+      </span>
+      <h6 class="works-heading">Prevencion del Acoso</h6>
+      <p class="works-text">Capacitacion de la <b>Ley N&#176; 27942</b> dirigida para trabajadores y miembros del comite de intervencion. <a href="https://oldevide-smg-sac.blogspot.com/p/gestion-del-acoso-laboral.html" target="_blank"><b>Leer mas</b></a></p>
+    </div>
+    <div class="works-tiles">
+      <span class="works-icons">
+        <li data-percent="100"><span class="text"><i aria-hidden="true" class="fa fa-fire-extinguisher"></i></span></li>
+      </span>
+      <h6 class="works-heading">Lucha Contra Incendios</h6>
+      <p class="works-text">Capacitacion en prevencion y lucha contra incendios, manejo de extintores, tipos de fuego, etc. <a href="https://oldevide-smg-sac.blogspot.com/p/prevencion-y-lucha-contra-incendios.html" target="_blank"><b>Leer mas</b></a></p>
+    </div>
+  </div>
+</div>
+<div style="clear:both;"></div>
+
+<!-- CONTADORES -->
+<div class="counter-box">
+  <div class="row counter-box-wrap">
+    <div class="counter-box-item">
+      <i class="lnr lnr-user"></i>
+      <h2 class="counter-sora">10</h2>
+      <div class="counter-sora-text">Integridad</div>
+    </div>
+    <div class="counter-box-item">
+      <i class="lnr lnr-users"></i>
+      <h2 class="counter-sora">10</h2>
+      <div class="counter-sora-text">Responsabilidad social</div>
+    </div>
+    <div class="counter-box-item">
+      <i class="lnr lnr-screen"></i>
+      <h2 class="counter-sora">10</h2>
+      <div class="counter-sora-text">Innovación</div>
+    </div>
+    <div class="counter-box-item">
+      <i class="lnr lnr-layers"></i>
+      <h2 class="counter-sora">10</h2>
+      <div class="counter-sora-text">Transparencia</div>
+    </div>
+  </div>
+</div>
+<div style="clear:both;"></div>
+
+<!-- PUBLICACIONES -->
+<div class="Portfolio-title" id="main-wrapper">
+  <h4>Nuestras Publicaciones.</h4>
+  <span>Capacitaciones y articulos de seguridad, salud en el trabajo y medio ambiente</span>
+</div>
+<div style="clear:both;"></div>
+<div class="blog-posts hfeed">
+  <div class="post-grid row">
+    <div class="post-grid-item">
+      <article class="post hentry">
+        <div class="block-image">
+          <a class="thumb" href="https://oldevide-smg-sac.blogspot.com/2026/03/que-son-los-accidentes-laborales-y.html" target="_blank">
+            <img alt="Que son los Accidentes Laborales" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2R5YXJ2c8XJq6n4Yw8p0Zk9V1mN2oL7uH3sT6vB5rQ8wE1dF4gA0iO9pL2kM5nJ8hG7fD6sA3qW1eR4tY6uI0oP9lK2jH5gF8dS1aZ3x/w600/Accidentes-Laborales.webp">
+          </a>
+          <font class="retitle">
+            <span class="post-retitle">
+              <h2 class="post-title entry-title">
+                <a href="https://oldevide-smg-sac.blogspot.com/2026/03/que-son-los-accidentes-laborales-y.html" target="_blank">Que son los Accidentes Laborales y como prevenirlos</a>
+              </h2>
+            </span>
+          </font>
         </div>
-    </section>
-    
-    <!-- ===== CAPACITACIÓN ===== -->
-    <section id="section-3" class="section bg-gray">
-        <h2 class="section-title">Cursos y Capacitaciones</h2>
-        <p class="section-subtitle">Programas de formación obligatorios y especializados para tu equipo de trabajo.</p>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
-                <h3>Ley 29783</h3>
-                <p>Las 4 capacitaciones obligatorias de seguridad según la Ley de Seguridad y Salud en el Trabajo.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-mountain"></i></div>
-                <h3>Seguridad Minera</h3>
-                <p>Capacitaciones obligatorias del reglamento de seguridad minera D.S. 024-2016-EM.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-fire-extinguisher"></i></div>
-                <h3>Prevención de Incendios</h3>
-                <p>Capacitación en prevención y lucha contra incendios, manejo de extintores y brigadas.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-radiation"></i></div>
-                <h3>Materiales Peligrosos</h3>
-                <p>Formación en manipulación y gestión segura de materiales peligrosos (MATPEL).</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-users"></i></div>
-                <h3>Liderazgo y Trabajo en Equipo</h3>
-                <p>Desarrollo de habilidades blandas para líderes y equipos de alto desempeño.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-handshake"></i></div>
-                <h3>Gestión del Acoso Laboral</h3>
-                <p>Prevención y gestión adecuada del acoso laboral en el centro de trabajo.</p>
-            </div>
+      </article>
+    </div>
+    <div class="post-grid-item">
+      <article class="post hentry">
+        <div class="block-image">
+          <a class="thumb" href="https://oldevide-smg-sac.blogspot.com/2026/02/registros-obligatorios-de-seguridad.html" target="_blank">
+            <img alt="Registros obligatorios de seguridad" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM0-jPB6k4Aoqa8wOB0BEf15b_VeFL3b1Os0Wq-eQyXVYNOwWmNrgrT_Rk067YuYTi7UvZjnMj1up2D0CODA1yqGJjRG2kXGzW3NvYXx8hnObnZuhVC12lwYV0x9O1yho1nM5rEBGZdKSkqTdiqOCGHdRzKzognKsg2_FV6N7Ov2EkFTk/s600/Registros-obligatorios-de-seguridad-en-el-trabajo.webp">
+          </a>
+          <font class="retitle">
+            <span class="post-retitle">
+              <h2 class="post-title entry-title">
+                <a href="https://oldevide-smg-sac.blogspot.com/2026/02/registros-obligatorios-de-seguridad.html" target="_blank">Registros obligatorios de seguridad en el trabajo</a>
+              </h2>
+            </span>
+          </font>
         </div>
-    </section>
-    
-    <!-- ===== CONTACTO ===== -->
-    <section id="section-7" class="section bg-gray">
-        <h2 class="section-title">Contacto</h2>
-        <div class="contact-info">
-            <p class="section-subtitle">¿Necesita más información? No dude en contactarnos.</p>
-            <ul class="contact-list">
-                <li>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Garcilazo de la Vega, Alto Selva Alegre - Arequipa, Perú</span>
-                </li>
-                <li>
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+5154711727">+51 054 711727</a>
-                </li>
-                <li>
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+51931372947">+51 931 372 947 (Ventas)</a>
-                </li>
-                <li>
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+51980718973">+51 980 718 973 (Soporte)</a>
-                </li>
-                <li>
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:oldevide.comercial@outlook.com">oldevide.comercial@outlook.com</a>
-                </li>
-            </ul>
+      </article>
+    </div>
+    <div class="post-grid-item">
+      <article class="post hentry">
+        <div class="block-image">
+          <a class="thumb" href="https://oldevide-smg-sac.blogspot.com/2026/01/estrategias-para-mitigar-riesgos.html" target="_blank">
+            <img alt="Estrategias para Mitigar los Riesgos Psicosociales" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6TO1bKV9I39JcMHmLLCzAOBN-JkqNVd5-4aHKAgXL76O_adJy35vvu8UdWt2pf9XRruHbhsNyvqi1rFlkjAP_RrgKtnpYnu4v6t3SfDSURbmq8t-TCUON_gxvhIBI9505C7jjAfshmHBRhbZKocvEDiO_9nvrC4x8zOaCGrgXWZnw43M/s600/Estrategias-para-Mitigar-los-Riesgos-Psicosociales.webp">
+          </a>
+          <font class="retitle">
+            <span class="post-retitle">
+              <h2 class="post-title entry-title">
+                <a href="https://oldevide-smg-sac.blogspot.com/2026/01/estrategias-para-mitigar-riesgos.html" target="_blank">Estrategias para Mitigar los Riesgos Psicosociales</a>
+              </h2>
+            </span>
+          </font>
         </div>
-    </section>
-    
-    <!-- ===== FOOTER ===== -->
-    <footer class="bot-bar-menu">
-        <div class="social-links">
-            <a href="https://www.facebook.com/OldevidePeru" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/company/oldevideperu/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/@OldevidePeru" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/oldevideperu/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/OldevidePeru" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </article>
+    </div>
+    <div class="post-grid-item">
+      <article class="post hentry">
+        <div class="block-image">
+          <a class="thumb" href="https://oldevide-smg-sac.blogspot.com/2025/12/04-cursos-y-capacitaciones-de-la-ley.html" target="_blank">
+            <img alt="04 Cursos y Capacitaciones de la Ley 29783" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRE6ylW5lFQQ4ZWrW4pfUGfSaTpS-nNGeAvWnBh-9MMC1uxUPJ8xB4PhE6bl31s9lxtQ5c7qggGX-zbxs4qA42l4FasQxixLK0r-p9Yd6Xorged_u2mnuv1PQBV2N4L99aDrHmdEXizpA6hARgyg7rUxvW1QCG6XSaswnLm_zQqrtpfrg/s600/04-Cursos-y-Capacitaciones-de-la-Ley-29783-en-Arequipa-y-a-Nivel-Nacional.webp">
+          </a>
+          <font class="retitle">
+            <span class="post-retitle">
+              <h2 class="post-title entry-title">
+                <a href="https://oldevide-smg-sac.blogspot.com/2025/12/04-cursos-y-capacitaciones-de-la-ley.html" target="_blank">04 Cursos y Capacitaciones de la Ley 29783 en Arequipa y a Nivel Nacional</a>
+              </h2>
+            </span>
+          </font>
         </div>
-        <div class="copyright">
-            &copy; 2026 Oldevide Servicios Múltiples Generales S.A.C. - Todos los derechos reservados
+      </article>
+    </div>
+  </div>
+</div>
+<div style="clear:both;"></div>
+
+<!-- SECCION 5: CLIENTES / TESTIMONIOS -->
+<div class="main-gallery" id="section-5">
+  <button class="gallery-prev" aria-label="Anterior">&#10094;</button>
+  <button class="gallery-next" aria-label="Siguiente">&#10095;</button>
+  <div class="gallery-cell">
+    <div class="testimonial">
+      <svg data-name="modasa" height="120" viewBox="0 0 120.35 22.93" width="120" xmlns="http://www.w3.org/2000/svg">
+        <g style="opacity: .97;">
+          <path d="M68.46,34.86c-1.36,0-2.62-.21-3.77-.64s-2.15-1.04-2.99-1.82c-.84-.79-1.5-1.71-1.96-2.77-.47-1.06-.7-2.22-.7-3.47s.23-2.43.7-3.49c.47-1.05,1.12-1.97,1.96-2.76.84-.79,1.84-1.39,2.99-1.82s2.4-.64,3.75-.64,2.62.21,3.76.64c1.14.43,2.13,1.04,2.98,1.82.84.79,1.5,1.71,1.96,2.76.47,1.06.7,2.22.7,3.49s-.23,2.41-.7,3.47c-.47,1.06-1.12,1.99-1.96,2.77-.84.79-1.83,1.39-2.98,1.82-1.14.43-2.39.64-3.74.64ZM68.44,30.32c.52,0,1.01-.09,1.46-.29s.85-.46,1.19-.82c.34-.36.61-.79.8-1.31.19-.52.29-1.1.29-1.75s-.1-1.23-.29-1.75c-.19-.51-.46-.95-.8-1.31-.34-.36-.74-.63-1.19-.82s-.94-.29-1.46-.29-1.01.09-1.46.29c-.45.19-.85.46-1.19.82-.34.36-.61.79-.8,1.31-.19.52-.29,1.1-.29,1.75s.1,1.23.29,1.75c.19.51.46.95.8,1.31.34.36.74.63,1.19.82.45.19.94.29,1.46.29Z" style="fill: #fff;" transform="translate(0 -17)"/>
+          <path d="M79.88,34.48v-16.66h5.62v12.3h7.52v4.36h-13.14Z" style="fill: #fff;" transform="translate(0 -17)"/>
+          <path d="M94.57,34.48v-16.66h8.21c1.86,0,3.49.34,4.9,1.01,1.41.67,2.51,1.63,3.31,2.87.79,1.24,1.19,2.71,1.19,4.43s-.4,3.22-1.19,4.46c-.79,1.25-1.9,2.21-3.31,2.88-1.41.67-3.05,1.01-4.9,1.01h-8.21ZM100.18,30.11h2.36c.79,0,1.49-.15,2.08-.45.6-.3,1.06-.75,1.39-1.34s.5-1.32.5-2.18-.17-1.55-.5-2.14-.8-1.03-1.39-1.33c-.59-.3-1.29-.45-2.08-.45h-2.36v7.9Z" style="fill: #fff;" transform="translate(0 -17)"/>
+        </g>
+      </svg>
+      <q class="testimonial-quote">MOTORES DIESEL ANDINOS S.A.- MODASA</q>
+      <span class="testimonial-author">MODASA</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">EQUIPOS ATENUZ</q>
+      <span class="testimonial-author">Equipos Atenuz</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">LOPEZ SERVICIOS AMBIENTALES EIRL</q>
+      <span class="testimonial-author">Lopez Servicios Ambientales EIRL</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">FIRE SUPPRESSION SYSTEMS</q>
+      <span class="testimonial-author">Fire Suppression Systems</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">GEMSA SERVICIOS GENERALES</q>
+      <span class="testimonial-author">Gemsa Servicios Generales</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">EXAKTA SERVICIOS INDUSTRIALES</q>
+      <span class="testimonial-author">Exakta Servicios Industriales</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">BIONA CONSULTORIA Y SERVICIOS AMBIENTALES EIRL</q>
+      <span class="testimonial-author">Biona Consultoria y Servicios Ambientales EIRL</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">MANPOWER PROFFESIONAL SERVICE</q>
+      <span class="testimonial-author">Manpower Proffesional Service</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">SODI R2 SAC</q>
+      <span class="testimonial-author">Sodi R2 SAC</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">ZAVAZ INGENIEROS Y ASOCIADOS SAC</q>
+      <span class="testimonial-author">Zavaz Ingenieros y Asociados SAC</span>
+    </div>
+  </div>
+  <div class="gallery-cell" style="display:none;">
+    <div class="testimonial">
+      <q class="testimonial-quote">ABRIL GRUPO INMOBILARIO</q>
+      <span class="testimonial-author">Abril Grupo Inmobiliario</span>
+    </div>
+  </div>
+  <div class="gallery-controls" id="galleryControls"></div>
+</div>
+<div style="clear:both;"></div>
+
+<!-- SECCION 6: SERVICIOS MULTIPLES -->
+<div class="sora-about-box" id="section-6">
+  <div class="about-wrap row">
+    <div class="about-title">
+      <h4><b>Servicios Multiples y de Mantenimiento</b></h4>
+      <span>Limpieza | Pintura | Mantenimiento | Electricidad</span>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="about-tiles">
+      <div class="team-member text-center">
+        <div class="team-img">
+          <img alt="Limpieza-Industria-en-Arequipa" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2Ic0lCHMC12vTf_Jj54Y8KeXglSWhAPqQ77XHkYwexk6BeYMV33njaITQbaWq4R5M1zw6wJiSaX8NsRy5GC-ag-bodz8FM7lH6CTeJ1IXzYjx6EGlK2Kq4IPUk2baaL3UX1eKq_zmdVgPh6VgTKKEgXD0CqqRVs5bIMTBsCBmvWtFpSA/s450/Limpieza-Industrial-en-Arequipa.webp" title="Limpieza-Industria-en-Arequipa">
+          <div class="overlay">
+            <div class="team-details text-center">
+              <p>Limpieza Industrial</p>
+              <div class="socials mt-20">
+                <a href="https://www.facebook.com/OldevidePeru" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@OldevidePeru" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="https://wa.me/51980718973" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/oldevideperu/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
-    
-    <!-- ===== Botón flotante WhatsApp ===== -->
-    <a href="https://wa.me/51980718973" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    
-    <!-- ===== Scripts ===== -->
-    <script>
-        // Menú móvil
-        const menuToggle = document.getElementById('menuToggle');
-        const navMenu = document.getElementById('navMenu');
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-        
-        // Cerrar menú al hacer clic en un enlace
-        document.querySelectorAll('.scrolling-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-        
-        // Registro del Service Worker (PWA)
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('sw.js')
-                    .then(function(registration) {
-                        console.log('ServiceWorker registrado con éxito:', registration.scope);
-                    })
-                    .catch(function(error) {
-                        console.log('Error al registrar ServiceWorker:', error);
-                    });
-            });
+        <h6 class="team-title">LIMPIEZA INDUSTRIAL</h6>
+        <span>Realizamos la limpieza industrial en mineria, industria, comercio. <a href="https://oldevide-services.blogspot.com/p/servicios-de-limpieza-industrial.html" target="_blank"><b>Leer mas</b></a></span>
+      </div>
+    </div>
+    <div class="about-tiles">
+      <div class="team-member text-center">
+        <div class="team-img">
+          <img alt="Pintura-Industrial-en-Arequipa" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjB9kB0v5oD8mBVfXoFZF42KNE2RGsxpVqIQCeJtLSrqEbQ-q5KG2-Hg8qcdmPthLzSkeuGb19hZs39J51WkIzJcdMOI3bBLQqm0wPPSNSV6mUiF5VCXJaPScsJe-3JCzqtxpl2agV0Jt0lDs7GyQ9Mr5CilM3USpIcQJbuIZO6FCIocYc/s450/Pintura-Industrial-en-Arequipa.webp" title="Pintura-Industrial-en-Arequipa">
+          <div class="overlay">
+            <div class="team-details text-center">
+              <p>Pintura Industrial</p>
+              <div class="socials mt-20">
+                <a href="https://www.facebook.com/OldevidePeru" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@OldevidePeru" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="https://wa.me/51980718973" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/oldevideperu/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6 class="team-title">PINTURA INDUSTRIAL</h6>
+        <span>Realizamos servicios de pintura industrial y arquitectonica <a href="https://oldevide-services.blogspot.com/p/servicios-de-pintura-industrial.html" target="_blank"><b>Leer mas</b></a></span>
+      </div>
+    </div>
+    <div class="about-tiles">
+      <div class="team-member last text-center">
+        <div class="team-img">
+          <img alt="Mantenimiento-industrial-y-domestico-en-Arequipa" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-rPLMXs1KMBTdCIC0G1PkTW71eWJF7nVKEoHcCG8P5seCvitkt19li4OjK0pM_PiBS3tFbKbGMu_lV3m5lBTQUWuZhRE4zaNRcJFco3ipqwEMU3uleDo7jNw0YECY5r4wkhG5yiX_Vm4PnhjIdPL1BwhnMpfoXDTBgP9-1NxIzN7Im4E/s450/Mantenimiento-Industrial-Civil-y-Domestico-en-Arequipa.webp" title="Mantenimiento-industrial-y-domestico-en-Arequipa">
+          <div class="overlay">
+            <div class="team-details text-center">
+              <p>Mantenimiento</p>
+              <div class="socials mt-20">
+                <a href="https://www.facebook.com/OldevidePeru" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@OldevidePeru" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="https://wa.me/51980718973" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/oldevideperu/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6 class="team-title">MANTENIMIENTO</h6>
+        <span>Realizamos mantenimiento de instalaciones industriales y domesticas <a href="https://oldevide-services.blogspot.com/p/servicios-de-mantenimiento-y-saneamiento.html" target="_blank"><b>Leer mas</b></a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECCION 7: CONTACTO -->
+<div class="insta-wrap" id="section-7">
+  <div class="contact-title">
+    <h4><b>Contacto</b></h4>
+    <span>Utilice esta informacion para que nos escriba sus comentarios, dudas y sugerencias</span>
+  </div>
+  <div style="clear:both;"></div>
+  <div class="row" id="sora_blogger_cntct_form">
+    <div class="wrap-me">
+      <div class="contact-form-widget">
+        <div class="form">
+          <form id="contactForm">
+            <p></p>
+            <span class="name-bg">
+              <label for="contactName">Nombre*</label>
+            </span>
+            <input autocomplete="name" class="contact-form-input" id="contactName" name="name" required size="30" type="text" value="">
+            <span class="email-bg">
+              <label for="contactEmail">Email*</label>
+            </span>
+            <input autocomplete="email" class="contact-form-input" id="contactEmail" name="email" required size="30" type="email" value="">
+            <span class="message-bg">
+              <label for="contactMessage">Mensaje*</label>
+            </span>
+            <textarea class="contact-form-email-message" cols="25" id="contactMessage" name="message" required rows="5"></textarea>
+            <p></p>
+            <button class="contact-form-button contact-form-button-submit" type="submit">Enviar</button>
+            <p></p>
+            <div class="form-success-msg" id="formSuccess"></div>
+            <div class="form-error-msg" id="formError"></div>
+          </form>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="map-me">
+      <div class="contact-other">
+        <h2 class="con-title">INFORMACION DE CONTACTO</h2>
+        <p class="con-text">Necesita mas informacion? no dude en contactarnos, Solicite su cotización <a href="https://forms.gle/RJCshAYYVdJfN5SJ8" target="_blank"><b>aquí</b></a></p>
+        <ul class="con-list">
+          <li><i class="lnr lnr-map"></i>Arequipa, Peru.</li>
+          <li><i class="lnr lnr-phone"></i>+51 054 711727</li>
+          <li><i class="lnr lnr-envelope"></i><a href="mailto:oldevide.comercial@outlook.com" target="_blank">oldevide.comercial@outlook.com</a></li>
+          <li><i class="lnr lnr-earth"></i><a href="https://oldevide-smg-sac.blogspot.com/" target="_blank">www.oldevide.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="bot-bar-menu" role="contentinfo">
+  <div class="bot-menu-wrap row">
+    <div class="bot-menu">
+      <ul id="nav2">
+        <li><a href="https://oldevide-smg-sac.blogspot.com/p/libro-de-reclamaciones.html" target="_blank">Libro de Reclamaciones</a></li>
+        <li><a href="https://oldevide-services.blogspot.com/" target="_blank">Servicios</a></li>
+      </ul>
+    </div>
+    <div class="jugas_footer_copyright">
+      &#169; 2014 | Creado para <a href="https://oldevideperu.blogspot.com/" rel="dofollow" style="color:#ffbd2f; text-decoration: underline;" title="Oldevide Servicios Multiples Generales SAC">Oldevide Peru</a>
+    </div>
+    <div class="bottom-bar-social blue">
+      <div class="widget LinkList" id="LinkList236">
+        <div class="widget-content">
+          <ul id="social">
+            <li><a aria-label="Facebook de Oldevide Peru" class="facebook" href="https://www.facebook.com/OldevidePeru" rel="noopener noreferrer" target="_blank" title="facebook"></a></li>
+            <li><a aria-label="Instagram de Oldevide Peru" class="instagram" href="https://www.instagram.com/oldevideperu/" rel="noopener noreferrer" target="_blank" title="instagram"></a></li>
+            <li><a aria-label="YouTube de Oldevide Peru" class="youtube" href="https://www.youtube.com/@OldevidePeru" rel="noopener noreferrer" target="_blank" title="youtube"></a></li>
+            <li><a aria-label="LinkedIn de Oldevide Peru" class="linkedin" href="https://www.linkedin.com/company/oldevideperu/" rel="noopener noreferrer" target="_blank" title="linkedin"></a></li>
+            <li><a aria-label="X Twitter de Oldevide Peru" class="twitter" href="https://x.com/OldevidePeru" rel="noopener noreferrer" target="_blank" title="X"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+// ===== MENU MOVIL =====
+document.getElementById('menuToggle').addEventListener('click', function() {
+  document.getElementById('mobileMenu').classList.toggle('active');
+});
+
+// ===== HEADER SCROLL =====
+window.addEventListener('scroll', function() {
+  var headTrigger = document.getElementById('head-trigger');
+  if (window.scrollY > 200) {
+    headTrigger.classList.add('scrolled-header');
+  } else {
+    headTrigger.classList.remove('scrolled-header');
+  }
+});
+
+// ===== TEXTO ANIMADO (TYPED) =====
+(function() {
+  var texts = ["Asesoría", "Consultoría", "Capacitación virtual", "Capacitación presencial", "Ley 29783", "Supervisión"];
+  var textIndex = 0;
+  var charIndex = 0;
+  var isDeleting = false;
+  var typedElement = document.getElementById('typedText');
+  
+  function typeText() {
+    var currentText = texts[textIndex];
+    if (isDeleting) {
+      typedElement.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typedElement.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+    }
+    var typeSpeed = isDeleting ? 50 : 100;
+    if (!isDeleting && charIndex === currentText.length) {
+      typeSpeed = 2000;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+      typeSpeed = 500;
+    }
+    setTimeout(typeText, typeSpeed);
+  }
+  typeText();
+})();
+
+// ===== BARRAS DE HABILIDADES ANIMADAS =====
+var skillsAnimated = false;
+function animateSkills() {
+  if (skillsAnimated) return;
+  var skillsSection = document.querySelector('.skills');
+  if (!skillsSection) return;
+  var rect = skillsSection.getBoundingClientRect();
+  if (rect.top < window.innerHeight && rect.bottom > 0) {
+    skillsAnimated = true;
+    document.querySelectorAll('.skill-percent').forEach(function(el) {
+      var percent = el.getAttribute('data-percent');
+      el.style.transition = 'width 1s ease-in-out';
+      el.style.width = percent + '%';
+    });
+  }
+}
+window.addEventListener('scroll', animateSkills);
+animateSkills();
+
+// ===== CONTADORES ANIMADOS =====
+var countersAnimated = false;
+function animateCounters() {
+  if (countersAnimated) return;
+  var counterBox = document.querySelector('.counter-box');
+  if (!counterBox) return;
+  var rect = counterBox.getBoundingClientRect();
+  if (rect.top < window.innerHeight && rect.bottom > 0) {
+    countersAnimated = true;
+    document.querySelectorAll('.counter-sora').forEach(function(counter) {
+      var target = parseInt(counter.textContent);
+      var current = 0;
+      var increment = Math.ceil(target / 50);
+      var timer = setInterval(function() {
+        current += increment;
+        if (current >= target) {
+          counter.textContent = target;
+          clearInterval(timer);
+        } else {
+          counter.textContent = current;
         }
-    </script>
+      }, 30);
+    });
+  }
+}
+window.addEventListener('scroll', animateCounters);
+animateCounters();
+
+// ===== GALERIA DE CLIENTES =====
+(function() {
+  var cells = document.querySelectorAll('.gallery-cell');
+  var controls = document.getElementById('galleryControls');
+  var currentIndex = 0;
+  
+  cells.forEach(function(cell, index) {
+    var dot = document.createElement('button');
+    dot.className = 'gallery-dot' + (index === 0 ? ' is-selected' : '');
+    dot.setAttribute('aria-label', 'Cliente ' + (index + 1));
+    dot.addEventListener('click', function() {
+      showCell(index);
+    });
+    controls.appendChild(dot);
+  });
+  
+  function showCell(index) {
+    cells[currentIndex].style.display = 'none';
+    cells[index].style.display = 'block';
+    controls.children[currentIndex].classList.remove('is-selected');
+    controls.children[index].classList.add('is-selected');
+    currentIndex = index;
+  }
+  
+  document.querySelector('.gallery-prev').addEventListener('click', function() {
+    showCell((currentIndex - 1 + cells.length) % cells.length);
+  });
+  document.querySelector('.gallery-next').addEventListener('click', function() {
+    showCell((currentIndex + 1) % cells.length);
+  });
+  
+  setInterval(function() {
+    showCell((currentIndex + 1) % cells.length);
+  }, 5000);
+})();
+
+// ===== FORMULARIO DE CONTACTO =====
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var name = document.getElementById('contactName').value;
+  var email = document.getElementById('contactEmail').value;
+  var message = document.getElementById('contactMessage').value;
+  
+  if (name && email && message) {
+    var mailtoLink = 'mailto:oldevide.comercial@outlook.com' +
+      '?subject=Contacto de ' + encodeURIComponent(name) +
+      '&body=' + encodeURIComponent('Nombre: ' + name + '\nEmail: ' + email + '\nMensaje: ' + message);
+    window.location.href = mailtoLink;
+    document.getElementById('formSuccess').textContent = '¡Gracias por tu mensaje! Se abrirá tu cliente de correo.';
+    document.getElementById('formError').textContent = '';
+  } else {
+    document.getElementById('formError').textContent = 'Por favor completa todos los campos.';
+    document.getElementById('formSuccess').textContent = '';
+  }
+});
+
+// ===== SERVICE WORKER (PWA) =====
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js')
+      .then(function(registration) {
+        console.log('ServiceWorker registrado con éxito:', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('Error al registrar ServiceWorker:', error);
+      });
+  });
+}
+</script>
 </body>
 </html>
