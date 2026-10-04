@@ -7,7 +7,7 @@
     <meta name="keywords" content="Seguridad y Salud en el Trabajo, Ley 29783, Capacitación SST, Consultoría SSOMA, Seguridad Minera, Perú, Arequipa">
     <meta name="author" content="Oldevide SMG SAC">
     
-    <!-- Verificaciones (mantenemos las de tu blog original) -->
+    <!-- Verificaciones de tu blog original -->
     <meta content='8UidPkTLBxgkmTyFJZ4XAoiyhFl_D1Ce4stOJyXSJY0' name='google-site-verification'/>
     <meta content='04e317f22cdf1f2f14cde327dfb527e5' name='p:domain_verify'/>
     
@@ -28,26 +28,42 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.gstatic.com" rel="dns-prefetch">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Righteous&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Datos Estructurados Schema.org (desde tu blog) -->
+    <!-- Datos Estructurados Schema.org -->
     <script type='application/ld+json'>
     {
       "@context": "https://schema.org",
       "@type": ["ProfessionalService", "LocalBusiness"],
-      "@id": "https://oldevide-smg-sac.blogspot.com/#organization",
       "name": "Oldevide Servicios Multiples Generales S. A. C.",
-      "description": "Consultora en Seguridad y Salud en el Trabajo, Capacitaciones y Consultoría SSOMA en Perú.",
-      "areaServed": "Perú",
+      "alternateName": "Oldevide SMG SAC",
+      "description": "Consultora líder en la implementación y gestión de sistemas de seguridad y salud en el trabajo (SST) en Perú.",
+      "slogan": "Su Aliado Estratégico en Seguridad y Salud Ocupacional.",
+      "email": "oldevide.comercial@outlook.com",
+      "telephone": "+5154711727",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Garcilazo de la Vega, Alto Selva Alegre",
         "addressLocality": "Arequipa",
+        "addressRegion": "Arequipa",
+        "postalCode": "04001",
         "addressCountry": "PE"
-      }
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -16.3780,
+        "longitude": -71.5230
+      },
+      "sameAs": [
+        "https://www.facebook.com/OldevidePeru",
+        "https://www.instagram.com/oldevideperu/",
+        "https://www.youtube.com/@OldevidePeru",
+        "https://www.linkedin.com/company/oldevideperu/",
+        "https://x.com/OldevidePeru"
+      ]
     }
     </script>
     
@@ -121,6 +137,7 @@
             color: #ffbd2f;
             font-size: 24px;
             font-weight: 700;
+            font-family: 'Righteous', cursive;
         }
         
         .scrolling-menu ul {
@@ -152,11 +169,13 @@
             cursor: pointer;
         }
         
-        /* ===== Hero ===== */
+        /* ===== Hero - IMAGEN DE FONDO CORREGIDA ===== */
         #header-wrapper {
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasKXc23JJ4XwcUXn1GKFwKQgO7-Q7zTg5_c7GSXt2x0AZyUfyxDuqcEWfKOKL3NhvkIZqwkqz1qpVGkEvIfdlNhE4F55k5RBLarNpLDO7wHVRuwZ5IPLs2ii7Bpfv_lUmk_ChRW8oHAT1wTZjHsMajUOBjlYABCPypZhu3xiZ5IKTNuuErHNdAw2xIDTu/s678/Oldevide-Servicios-Multiples-Generales-SAC.webp');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOsBFpTOt0ZAuBRQiYUNUYdNMunFKUneH3YR4rtK8vGFlAdqV751w0c4q7OpiNkA8mJoSauFShyphenhyphentSZEPRQW0X3B2AptGlZ702JtPxiCDe4eJP419ILJRgTkxx28QxpkEH8R3oVMaV7EZZJFIGbKsyCONmXeE8Goxraaq-EP_pcwUiI6RCnlf3wY2-gsP_m/s1600/Oldevide-Servicios-Multiples-Generales-SAC.webp');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -172,16 +191,19 @@
             text-transform: uppercase;
             margin-bottom: 20px;
             text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+            font-family: 'Righteous', cursive;
         }
         
         .header-logo-desc {
             font-size: 22px;
             margin-bottom: 30px;
+            text-transform: uppercase;
         }
         
         .header-logo-desc span {
             color: #ffbd2f;
             font-weight: 700;
+            font-size: 31px;
         }
         
         .btn-hero {
@@ -389,6 +411,10 @@
                 font-size: 16px;
             }
             
+            .header-logo-desc span {
+                font-size: 22px;
+            }
+            
             .section-title {
                 font-size: 26px;
             }
@@ -396,6 +422,10 @@
             .contact-list li {
                 font-size: 15px;
                 flex-wrap: wrap;
+            }
+            
+            #header-wrapper {
+                background-attachment: scroll;
             }
         }
     </style>
@@ -417,7 +447,6 @@
                     <li><a class="current" href="#header-wrapper">Inicio</a></li>
                     <li><a href="#section-2">Servicios HSE</a></li>
                     <li><a href="#section-3">Capacitación</a></li>
-                    <li><a href="#section-5">Clientes</a></li>
                     <li><a href="#section-7">Contacto</a></li>
                 </ul>
             </nav>
@@ -497,29 +526,6 @@
         </div>
     </section>
     
-    <!-- ===== CLIENTES ===== -->
-    <section id="section-5" class="section">
-        <h2 class="section-title">Nuestros Clientes</h2>
-        <p class="section-subtitle">Empresas que confían en nuestra experiencia y profesionalismo.</p>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-leaf"></i></div>
-                <h3>López Servicios Ambientales</h3>
-                <p>Servicios ambientales y consultoría especializada.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-fire"></i></div>
-                <h3>Fire</h3>
-                <p>Soluciones contra incendios y seguridad industrial.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-industry"></i></div>
-                <h3>Sector Minero e Industrial</h3>
-                <p>Acompañamiento a empresas del sector productivo nacional.</p>
-            </div>
-        </div>
-    </section>
-    
     <!-- ===== CONTACTO ===== -->
     <section id="section-7" class="section bg-gray">
         <h2 class="section-title">Contacto</h2>
@@ -528,19 +534,23 @@
             <ul class="contact-list">
                 <li>
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Arequipa, Perú</span>
+                    <span>Garcilazo de la Vega, Alto Selva Alegre - Arequipa, Perú</span>
                 </li>
                 <li>
                     <i class="fas fa-phone"></i>
                     <a href="tel:+5154711727">+51 054 711727</a>
                 </li>
                 <li>
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:oldevide.comercial@outlook.com">oldevide.comercial@outlook.com</a>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+51931372947">+51 931 372 947 (Ventas)</a>
                 </li>
                 <li>
-                    <i class="fab fa-whatsapp"></i>
-                    <a href="https://wa.me/51980718973" target="_blank" rel="noopener">+51 980 718 973</a>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+51980718973">+51 980 718 973 (Soporte)</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:oldevide.comercial@outlook.com">oldevide.comercial@outlook.com</a>
                 </li>
             </ul>
         </div>
